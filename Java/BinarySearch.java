@@ -8,11 +8,11 @@ public class BinarySearch {
         
         while(start <= end){
             int mid = (start+end)/2;
-            if(arr[mid] == x){
+            if (arr[mid] == x){
                 return mid;
-            }else if(arr[mid] > x){
+            } else if(arr[mid] > x){
                 end = (mid-1);
-            }else {
+            } else {
                 start = (mid+1);
             }
         }
